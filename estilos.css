@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.NavBar{
+    height:115px;
+    border-color:green;
+    border-style:solid;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-inline:150px;
+    
+   
+}
+
+
+.LogoBarraBuscar{
+    display: flex;
+    align-items: center;
+    width: 700px;
+    justify-content: space-between;
+
+}
+.Logo{
+    display: flex;
+    align-items: center;
+}
+.Logo div h1{
+    color:#464646;
+    font-size: 35px;
+}
+.Logo div span{
+    font-size: 25px;
+    color:#2A7AE4;
+}
+.BarraBusqueda{
+    display: flex;
+    align-items: center;
+}
+.BarraBusqueda img{
+    margin-left:-40px;
+}
+.LogoBarraBuscar input{
+    width: 400px;
+
+    height: 40px;
+
+    padding-inline: 10px;
+    border:none;
+    background-color: #F5F5F5;
+    border-radius:15px;
+}
+.LogoBarraBuscar input:focus{
+
+    outline: 2px solid #2A7AE4;
+
+}
+
+.Login button {
+    border:solid 2px;
+    border-color: #2A7AE4;
+    background-color:white;
+    color: #2A7AE4;;
+    padding: 15px 80px;
+
+    cursor: pointer;
+}
+.Login button:hover{
+    color: white;
+    background-color:#2A7AE4;
+}
+.Login button:focus{
+
+    background-color:#1c56a3;
+}
+
+
+
+.Banner{
+  /*   height:450px; */
+    position:relative;
+    border-style:solid;
+    border-color:rgb(128, 0, 0);
+
+}
+.BannerImg img{    
+    width: 100%;
+}
+.BannerText{
+    position:absolute;
+    left:150px;
+    top:50%;
+}
+
+/*estilo boton azul */
+
+.BannerText button{
+    background-color: #2A7AE4;
+    color:white;
+    padding:10px 40px;
+    border: none;
+    cursor: pointer;
+}
+.BannerText button:hover{
+
+    background-color: white;
+    color:#2A7AE4;;
+
+}
+.BannerText button:focus{
+
+    background-color:#9ac6ff;;
+
+}
