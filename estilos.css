@@ -1,120 +1,153 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
 }
 
-.NavBar{
-    height:115px;
-    border-color:green;
-    border-style:solid;
+.NavBar {
+  height: 115px;
+  border-color: green;
+  border-style: solid;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-    padding-inline:150px;
-    
-   
+  padding-inline: 50px;
 }
 
+.Logo {
+  display: flex;
+  align-items: center;
+}
+.Logo div h1 {
+  color: #464646;
+  font-size: 35px;
+}
+.Logo div span {
+  font-size: 25px;
+  color: #2a7ae4;
+}
+.BarraBusqueda {
+  display: flex;
+  align-items: center;
+}
+.BarraBusqueda img {
+  margin-left: -130px;
+}
+.BarraBusqueda input {
+  width: 400px;
 
-.LogoBarraBuscar{
-    display: flex;
-    align-items: center;
-    width: 700px;
-    justify-content: space-between;
-
+  height: 40px;
+  margin-left: -100px;
+  margin-right:100px;
+  padding-inline: 10px;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 15px;
 }
-.Logo{
-    display: flex;
-    align-items: center;
-}
-.Logo div h1{
-    color:#464646;
-    font-size: 35px;
-}
-.Logo div span{
-    font-size: 25px;
-    color:#2A7AE4;
-}
-.BarraBusqueda{
-    display: flex;
-    align-items: center;
-}
-.BarraBusqueda img{
-    margin-left:-40px;
-}
-.LogoBarraBuscar input{
-    width: 400px;
-
-    height: 40px;
-
-    padding-inline: 10px;
-    border:none;
-    background-color: #F5F5F5;
-    border-radius:15px;
-}
-.LogoBarraBuscar input:focus{
-
-    outline: 2px solid #2A7AE4;
-
+.BarraBusqueda input:focus {
+  outline: 2px solid #2a7ae4;
 }
 
 .Login button {
-    border:solid 2px;
-    border-color: #2A7AE4;
-    background-color:white;
-    color: #2A7AE4;;
-    padding: 15px 80px;
-
-    cursor: pointer;
+  border: solid 2px;
+  border-color: #2a7ae4;
+  background-color: white;
+  color: #2a7ae4;
+  padding: 15px 80px;
+  margin-right: 130px;
+  cursor: pointer;
 }
-.Login button:hover{
-    color: white;
-    background-color:#2A7AE4;
+.Login button:hover {
+  color: white;
+  background-color: #2a7ae4;
 }
-.Login button:focus{
-
-    background-color:#1c56a3;
-}
-
-
-
-.Banner{
-  /*   height:450px; */
-    position:relative;
-    border-style:solid;
-    border-color:rgb(128, 0, 0);
-
-}
-.BannerImg img{    
-    width: 100%;
-}
-.BannerText{
-    position:absolute;
-    left:150px;
-    top:50%;
+.Login button:focus {
+  background-color: #1c56a3;
 }
 
-/*estilo boton azul */
-
-.BannerText button{
-    background-color: #2A7AE4;
-    color:white;
-    padding:10px 40px;
-    border: none;
-    cursor: pointer;
+.Banner {
+  position: relative;
+  border-style: solid;
+  border-color: rgb(128, 0, 0);
 }
-.BannerText button:hover{
-
-    background-color: white;
-    color:#2A7AE4;;
-
+.BannerImg img {
+  width: 100%;
 }
-.BannerText button:focus{
+.BannerText {
+  position: absolute;
+  left: 150px;
+  top: 50%;
+}
 
-    background-color:#9ac6ff;;
+.BannerText button {
+  background-color: #2a7ae4;
+  color: white;
+  padding: 10px 40px;
+  border: none;
+  cursor: pointer;
+}
+.BannerText button:hover {
+  background-color: white;
+  color: #2a7ae4;
+}
+.BannerText button:focus {
+  background-color: #9ac6ff;
+}
+
+
+
+
+/* PARA 768 */
+@media (max-width: 768px) {
+
+    .BarraBusqueda input {
+        width: 200px;
+        margin-left: 20px;
+       
+    }
+    .Login button {
+        margin-right:20px;
+        padding: 15px 50px;  
+    
+    }
+    .NavBar { 
+        padding-inline: 20px;
+    }
+}
+
+
+@media (max-width: 350px){
+
+    .NavBar{
+        gap: 10px;
+        padding-inline: 0px;
+        flex-wrap: wrap;
+    }
+    .Logo{
+        margin-left: 10px;
+    }
+    .Logo div > *{
+        color: #00bd39;
+        font-size: 5px;
+    }
+    .BarraBusqueda{
+        order: 1;      
+        margin-bottom: 20px;
+    }
+    .BarraBusqueda img {
+        margin-left: -35px;
+      }
+    .BarraBusqueda input {
+        width: 280px;    
+       margin-right:0px
+    }   
+    .Login button {
+        margin-right: 10px;
+        padding:10px 20px;  
+    
+    }
 
 }
