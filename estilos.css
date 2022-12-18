@@ -7,9 +7,9 @@
 
 .NavBar {
   height: 115px;
-  border-color: green;
+/*   border-color: green;
   border-style: solid;
-
+ */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,40 +61,45 @@
   cursor: pointer;
 }
 .Login button:hover {
-  color: white;
+   color: white;
   background-color: #2a7ae4;
 }
-.Login button:focus {
-  background-color: #1c56a3;
-}
 
+/* BANNER */
 .Banner {
   position: relative;
-  border-style: solid;
-  border-color: rgb(128, 0, 0);
+ /*  border-style: solid;
+  border-color: rgb(128, 0, 0); */
 }
 .BannerImg img {
   width: 100%;
+
 }
 .BannerText {
   position: absolute;
-  left: 150px;
-  top: 50%;
+  left: 50px;
+  top: 40%;
 }
-
+.BannerText *{
+  color: white;
+  margin-bottom: 20px;
+}
+.BannerText h1{
+  font-size: 60px;
+}
+.BannerText p{
+  font-size: 25px;
+}
 .BannerText button {
   background-color: #2a7ae4;
   color: white;
-  padding: 10px 40px;
+  padding: 15px 30px;
   border: none;
   cursor: pointer;
 }
 .BannerText button:hover {
   background-color: white;
-  color: #2a7ae4;
-}
-.BannerText button:focus {
-  background-color: #9ac6ff;
+/*   color: #2a7ae4; */
 }
 
 
@@ -103,6 +108,7 @@
 /* PARA 768 */
 @media (max-width: 768px) {
 
+
     .BarraBusqueda input {
         width: 200px;
         margin-left: 20px;
@@ -110,12 +116,28 @@
     }
     .Login button {
         margin-right:20px;
-        padding: 15px 50px;  
+        padding: 15px 40px;  
     
     }
     .NavBar { 
         padding-inline: 20px;
     }
+
+    /* BANNER */
+    .BannerText {    
+      left: 50px;
+      top: 45%;
+    }
+    .BannerText *{
+      margin-bottom: 20px;
+    }
+    .BannerText h1{
+      font-size: 50px;
+    }
+    .BannerText p{
+      font-size: 20px;
+    }
+
 }
 
 
@@ -150,4 +172,24 @@
     
     }
 
+    /* BANNER */
+
+    .BannerText {    
+      left: 20px;
+      top: 40%;
+    }
+    .BannerText *{
+      margin-bottom: 10px;
+    }
+    .BannerText h1{
+      font-size: 20px;
+    }
+    .BannerText p{
+      font-size: 13px;
+    }
+    .BannerText button {
+   
+      padding: 10px 20px;
+
+    }
 }
