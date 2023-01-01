@@ -32,16 +32,20 @@
 .BarraBusqueda {
   display: flex;
   align-items: center;
+  width: 400px;
+  margin-left: 20px;
+  margin-right:40px;
+  
 }
 .BarraBusqueda img {
-  margin-left: -130px;
+  margin-left: -40px;
 }
 .BarraBusqueda input {
-  width: 400px;
-
+ /*  width: 400px; */
+  width: 100%;
   height: 40px;
-  margin-left: -100px;
-  margin-right:100px;
+/*   margin-left: 10px;
+  margin-right:10px; */
   padding-inline: 10px;
   border: none;
   background-color: #f5f5f5;
@@ -57,7 +61,7 @@
   background-color: white;
   color: #2a7ae4;
   padding: 15px 80px;
-  margin-right: 130px;
+/*   margin-left: -130px; */
   cursor: pointer;
 }
 .Login button:hover {
@@ -99,14 +103,20 @@
 }
 .BannerText button:hover {
   background-color: white;
-/*   color: #2a7ae4; */
+  color: #2a7ae4;
 }
+
+/* Area de Contactenos */
 
 .Contactenos{
   background-color:#EAF2FD;
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
+}
+.ladoL{
+  display: flex;
+  gap:50px;
 }
 .LinksDeInteres ul{
   list-style:none;
@@ -124,22 +134,27 @@
 .FormContacto div{
   margin-bottom:20px;
 }
-.InputNombre *{
+.InputNombre{
   width: 550px;
+}
+.InputNombre *{
+
+  width: 100%;
   background-color:white;
   padding: 0px 0px 5px 10px;
 }
 .InputNombre p{
+
   font-size: 12px;
+  padding-top: 10px;
   color: #A2A2A2;
 }
 .InputNombre input{  
+
   border:none;
   box-shadow: 0px 2px 0px 0px rgba(199,199,199,1); 
    
 }
-
-
 .InputNombre input:focus{
   outline: none;
     border-color: #9ecaed;
@@ -151,6 +166,45 @@
 /* .FormContacto textarea{
   width: 550px;
 } */
+.TextAreaNombre{
+  width: 550px;
+}
+.TextAreaNombre *{
+
+  width: 100%;
+  background-color:white;
+  padding: 0px 0px 5px 10px;
+}
+.TextAreaNombre p{
+
+  font-size: 12px;
+  padding-top: 10px;
+  color: #A2A2A2;
+}
+.TextAreaNombre textarea{  
+  resize: none;
+  border:none;
+  box-shadow: 0px 2px 0px 0px rgba(199,199,199,1); 
+   
+}
+.TextAreaNombre textarea:focus{
+  outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0px 2px 0px 0px #2a7ae4;
+   
+}
+.EnviarMsj{
+  background-color: #2a7ae4;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+}
+.EnviarMsj:focus {
+ 
+ background-color: #2ae455;
+  /* color: #2a7ae4; */
+}
 
 .pie{
 
@@ -166,22 +220,82 @@
 }
 
 
+.Categoriaitems{
+/*   border-style: solid;
+  border-color: rgb(128, 0, 0); */
+    margin: 30px 150px 40px 150px;
+    box-shadow: 0 3px 10px 0 rgb(0 0 0 / 10%);
+    border-radius: 15px;
+   
+}
+::-webkit-scrollbar {
+  width: 1vw; /* THIS WILL RESET THE DEFAULT SCORLLBAR STYLING */
+}
+
+/* TO STYLE THE SCROLLBAR TRACK */
+::-webkit-scrollbar-track {
+  background-color: #ffffff; /* THIS WILL SET THE COLOR OF THE SCROLLBAR TRACK */
+}
+
+/* TO STYLE THE SCROLLBAR THUMB */
+::-webkit-scrollbar-thumb {
+  background-color: #2a7ae4;
+  border: 0.3vw solid #ffffff;
+  border-radius: 5vw;
+}
+
+.Opcs{
+  display:flex;
+  flex-direction: row;
+  justify-content: Center;
+  margin-bottom: 20px;
+}
+.Opcs h1{
+  font-size: 30px;
+}
+.ListaItems{
+  display:flex;
+ /*  justify-content: space-between; */
+/*   gap: 15px;
+  padding-inline:10px; */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.Item{
+  line-height: 25px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 20px;
+}
+.Item:hover{
+  background: linear-gradient(180deg, #2A7AE4 0%, rgba(255, 255, 255, 0) 100%);
+}
+.Item img{
+  border-radius: 20px;
+}
+.Item a{
+  text-decoration: none;
+}
+
+
+
 /* PARA 768 */
 @media (max-width: 768px) {
 
 
     .BarraBusqueda input {
-        width: 200px;
-        margin-left: 20px;
+        width: 300px;
+      /*   margin-left: 20px; */
        
     }
     .Login button {
-        margin-right:50px;
+       /*  margin-right:50px; */
         padding: 15px 40px;  
     
     }
     .NavBar { 
-        padding-inline: 20px;
+      padding-inline: 20px;
     }
 
     /* BANNER */
@@ -198,7 +312,27 @@
     .BannerText p{
       font-size: 20px;
     }
+    
+    .Contactenos{
+      display: flex;
+      justify-content: space-between;
+    }
+    .ladoL{
+      display: block;
+      gap:0px;
+    /*   margin-left: 50px; */
+    }
 
+    .InputNombre{
+      width: 400px;
+    }
+    .TextAreaNombre{
+      width: 400px;
+    }
+
+    .Categoriaitems {
+      margin: 30px 50px 40px 50px;
+    }
 }
 
 
@@ -219,6 +353,7 @@
     .BarraBusqueda{
         order: 1;      
         margin-bottom: 20px;
+        margin-left:20px; 
     }
     .BarraBusqueda img {
         margin-left: -35px;
@@ -252,5 +387,36 @@
    
       padding: 10px 20px;
 
+    }
+
+    .Contactenos{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+
+      padding: 30px 0px 30px 0px;
+    }
+    .LinksDeInteres ul{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .InputNombre{
+      width: 200px;
+    }
+    .TextAreaNombre{
+      width: 200px;
+    }
+    .InputNombre{
+      width: 300px;
+    }
+    .TextAreaNombre{
+      width: 300px;
+    }
+
+    .Categoriaitems {
+      margin: 30px 20px 40px 20px;
     }
 }

@@ -21,19 +21,16 @@
           </div>
         </div>
         <div class="BarraBusqueda">
-          <div>
+         
             <input type="text" placeholder="¿Qué deseas buscar?" />
-          </div>
-          <div>
+         
             <img src="./assets/Lupa.png" />
-          </div>
+        
         </div>
         <div class="Login">
           <button>Login</button>
         </div>  
     </div>
-
-
     <div class="Banner">
         <div class="BannerText">
             <h1>Febrero Promocional</h1>
@@ -48,21 +45,90 @@
     </div>
 
 
+
+    <!-- <div class="Categoriaitems">
+      <div class="Opcs">
+        <h1>Star Wars</h1>
+      </div>
+      <div class="ListaItems">
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+        
+        <div class="Item">
+          <img src="https://via.placeholder.com/175">
+          <p>Nombre</p>
+          <p>Precio</p>
+          <a href="#">Ver producto</a>
+        </div>
+      </div>
+    </div> -->
+
+    <div id="ConteinerItems">
+
+    </div>
+
+
+
+
+
     <div class="Contactenos">
 
-      <div>
-        <img src="./assets/LogoAluraGeek.png">
+      <div class="ladoL">
+        <div class="LogoContactenos">
+          <img src="./assets/LogoAluraGeek.png">
+        </div>
+
+        <div class="LinksDeInteres">
+          <ul>
+            <li>Quienes somos</li>
+            <li>Politica de privacidad</li>
+            <li>Programa de fidelidad</li>
+            <li>Nuestras tiendas</li>
+            <li>Quiero ser franquiciado</li>
+            <li>Anuncie aqui</li>
+          </ul>
+        </div>
       </div>
-      <div class="LinksDeInteres">
-        <ul>
-          <li>Quienes somos</li>
-          <li>Politica de privacidad</li>
-          <li>Programa de fidelidad</li>
-          <li>Nuestras tiendas</li>
-          <li>Quiero ser franquiciado</li>
-          <li>Anuncie aqui</li>
-        </ul>
-      </div>
+
       <div class="FormContacto">
 
         <div class="Titulo">
@@ -77,25 +143,24 @@
         
         <div  class="TextAreaNombre">
           <p>Escribe un mensaje</p>
-          <textarea></textarea>
+          <textarea  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
         </div>
 
 
 
-        <button>Enviar mensaje</button>
+        <button class="EnviarMsj">Enviar mensaje</button>
       </div>
 
     </div>
-
-
-
-
-
     <div class="pie">
       <p>Desarrollado por Panelo Martin</p>
       <p>2022</p>
       <a href="https://github.com/MartinPanelo/eCommerce-Tienda-Virtual-FrontEnd-Alura-Oracle">Github del proyecto  <i class="fa-brands fa-github"></i> </a>
     </div>
+
+
+
+
     <script src="scripts.js"></script>
   </body>
 </html>
