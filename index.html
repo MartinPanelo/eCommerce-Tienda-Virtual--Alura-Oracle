@@ -28,7 +28,7 @@
         
         </div>
         <div class="Login">
-          <button>Login</button>
+          <button id="lg" onclick="Credenciales(true)">Login</button>
         </div>  
     </div>
     <div class="Banner">
@@ -159,6 +159,25 @@
     </div>
 
 
+
+    <div id="ml" class="modalLogin">
+      
+      <div class="formulariologin">
+
+        <div  class="Inputlogin">
+          <p>Usuario</p>
+          <input type="text">
+        </div>
+        <div  class="Inputlogin">
+          <p>Contraseña</p>
+          <input type="text">
+        </div>
+        <div class="btnlogin">
+          <button >Iniciar sesión</button>
+          <button onclick="Credenciales(false)">Cancelar</button>
+        </div>
+      </div>
+    </div>
 
 
     <script src="scripts.js"></script>

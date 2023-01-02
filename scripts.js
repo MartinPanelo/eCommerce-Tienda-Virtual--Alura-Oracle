@@ -1,4 +1,30 @@
 ImgBanner = document.getElementById("ImgBanner");
+btnlogin = document.getElementById("lg");
+modallogin = document.getElementById("ml");
+modallogin.style.display = "none";
+
+function Credenciales(flag){
+
+    
+    if(flag){
+        document.body.scrollIntoView({
+            behavior: "auto",
+          });
+        modallogin.style.display = "block";
+        document.body.classList.add('stopscroll');
+    }else{
+        modallogin.style.display = "none";
+        document.body.classList.add('scroll');
+    }
+   
+ 
+      /*   modallogin.style.display = "none";
+        document.body.classList.add('scroll'); */
+
+
+}
+
+
 
 
 //addEventListener("resize", AjustarBanner());
@@ -157,5 +183,4 @@ function crearGondola(data) {
 }
 
 /* const mouseWheel = null;// = document.querySelector('.ListaItems'); */
-
 
