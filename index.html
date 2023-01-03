@@ -165,20 +165,21 @@
       <div class="formulariologin">
 
         <div  class="Inputlogin">
-          <p>Usuario</p>
-          <input type="text">
+          <p >Usuario</p>
+          <input id="inputUser" value="" type="text">
         </div>
         <div  class="Inputlogin">
-          <p>Contraseña</p>
-          <input type="text">
+          <p id="msjpass">Contraseña</p>
+          <input id="inputPass" value="" type="text">
         </div>
         <div class="btnlogin">
-          <button >Iniciar sesión</button>
+          <button onclick="Login()">Iniciar sesión</button>
           <button onclick="Credenciales(false)">Cancelar</button>
         </div>
+        <p id="msjuser"></p>
       </div>
     </div>
-
+   
 
     <script src="scripts.js"></script>
   </body>
