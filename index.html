@@ -181,6 +181,43 @@
     </div>
    
 
+    <div id="modalAdditem">
+      <div class="formularioadditem">
+        <div><h1>Agregar nuevo producto</h1></div>
+        <div  class="Inputlogin">
+          <p >Nombre</p>
+          <input id="inputUser" value="" type="text">
+        </div>
+        <div  class="Inputlogin">
+          <p >Precio</p>
+          <input id="inputUser" value="" type="text">
+        </div>
+        <div  class="Inputlogin">
+          <p >URL de la imagen</p>
+          <input id="inputUser" value="" type="text">
+        </div>
+        <div  class="Inputlogin">
+          <p >Categoria</p>
+          <input id="inputUser" value="" type="text">
+        </div>
+        <div  class="Inputlogin">
+          <p >Description</p>
+       
+           
+            <textarea  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+          </div>
+       
+          
+
+
+        <div class="btnlogin">
+          <button onclick="Login()">Iniciar sesión</button>
+          <button onclick="Credenciales(false)">Cancelar</button>
+        </div>
+        <p id="msjuser"></p>
+      </div>
+    </div>
+
     <script src="scripts.js"></script>
   </body>
 </html>
