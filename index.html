@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <script src="https://kit.fontawesome.com/fc73908a79.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="estilos.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,40 +12,34 @@
     <title>Principal</title>
   </head>
   <body>
-    <div class="NavBar">      
-        <div class="Logo">
-          <div>
-            <img src="./assets/LogoNavBar.png" />
-          </div>
-          <div>
-            <h1><span>Alura</span>Geek</h1>
-          </div>
+    <div class="NavBar">
+      <div class="Logo">
+        <div>
+          <img src="./assets/LogoNavBar.png" />
         </div>
-        <div class="BarraBusqueda">
-         
-            <input type="text" placeholder="¿Qué deseas buscar?" />
-         
-            <img src="./assets/Lupa.png" />
-        
+        <div>
+          <h1><span>Alura</span>Geek</h1>
         </div>
-        <div class="Login">
-          <button id="lg" onclick="Credenciales(true)">Login</button>
-        </div>  
+      </div>
+      <div class="BarraBusqueda">
+        <input type="text" placeholder="¿Qué deseas buscar?" />
+
+        <img src="./assets/Lupa.png" />
+      </div>
+      <div class="Login">
+        <button id="lg" onclick="Credenciales(true)">Login</button>
+      </div>
     </div>
     <div class="Banner">
-        <div class="BannerText">
-            <h1>Febrero Promocional</h1>
-            <p>Productos Seleccionados con 33% de descuento</p>
-            <button>Ver Consolas</button>
-        </div>       
-        <div class="BannerImg">
-            <img id="ImgBanner" src="./assets/Banner.png">
-        </div>
-        
-        
+      <div class="BannerText">
+        <h1>Febrero Promocional</h1>
+        <p>Productos Seleccionados con 33% de descuento</p>
+        <button>Ver Consolas</button>
+      </div>
+      <div class="BannerImg">
+        <img id="ImgBanner" src="./assets/Banner.png" />
+      </div>
     </div>
-
-
 
     <!-- <div class="Categoriaitems">
       <div class="Opcs">
@@ -102,19 +97,12 @@
       </div>
     </div> -->
 
-    <div id="ConteinerItems">
-
-    </div>
-
-
-
-
+    <div id="ConteinerItems"></div>
 
     <div class="Contactenos">
-
       <div class="ladoL">
         <div class="LogoContactenos">
-          <img src="./assets/LogoAluraGeek.png">
+          <img src="./assets/LogoAluraGeek.png" />
         </div>
 
         <div class="LinksDeInteres">
@@ -130,47 +118,40 @@
       </div>
 
       <div class="FormContacto">
-
         <div class="Titulo">
           <p>Hable con nosotros</p>
         </div>
 
-        <div  class="InputNombre">
+        <div class="InputNombre">
           <p>Nombre</p>
-          <input type="text">
+          <input type="text" />
         </div>
-                
-        
-        <div  class="TextAreaNombre">
+
+        <div class="TextAreaNombre">
           <p>Escribe un mensaje</p>
-          <textarea  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+          <textarea oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
         </div>
-
-
 
         <button class="EnviarMsj">Enviar mensaje</button>
       </div>
-
     </div>
     <div class="pie">
       <p>Desarrollado por Panelo Martin</p>
       <p>2022</p>
-      <a href="https://github.com/MartinPanelo/eCommerce-Tienda-Virtual-FrontEnd-Alura-Oracle">Github del proyecto  <i class="fa-brands fa-github"></i> </a>
+      <a href="https://github.com/MartinPanelo/eCommerce-Tienda-Virtual-FrontEnd-Alura-Oracle"
+        >Github del proyecto <i class="fa-brands fa-github"></i>
+      </a>
     </div>
-
-
 
     <div id="ml" class="modalLogin">
-      
       <div class="formulariologin">
-
-        <div  class="Inputlogin">
-          <p >Usuario</p>
-          <input id="inputUser" value="" type="text">
+        <div class="Inputlogin">
+          <p>Usuario</p>
+          <input id="inputUser" value="" type="text" />
         </div>
-        <div  class="Inputlogin">
+        <div class="Inputlogin">
           <p id="msjpass">Contraseña</p>
-          <input id="inputPass" value="" type="text">
+          <input id="inputPass" value="" type="text" />
         </div>
         <div class="btnlogin">
           <button onclick="Login()">Iniciar sesión</button>
@@ -179,44 +160,42 @@
         <p id="msjuser"></p>
       </div>
     </div>
-   
 
-    <div id="modalAdditem">
-      <div class="formularioadditem">
-        <div><h1>Agregar nuevo producto</h1></div>
-        <div  class="Inputlogin">
-          <p >Nombre</p>
-          <input id="inputUser" value="" type="text">
-        </div>
-        <div  class="Inputlogin">
-          <p >Precio</p>
-          <input id="inputUser" value="" type="text">
-        </div>
-        <div  class="Inputlogin">
-          <p >URL de la imagen</p>
-          <input id="inputUser" value="" type="text">
-        </div>
-        <div  class="Inputlogin">
-          <p >Categoria</p>
-          <input id="inputUser" value="" type="text">
-        </div>
-        <div  class="Inputlogin">
-          <p >Description</p>
-       
-           
-            <textarea  oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+    <form id="addform">
+      <div id="modalAdditem">
+        <div class="formularioadditem">
+          <div><h1 id="titul">Agregar nuevo producto</h1></div>
+          <div class="Inputlogin">
+            <p>Nombre</p>
+            <input id="inputnombre" value="" type="text" />
           </div>
-       
-          
+          <div class="Inputlogin">
+            <p>Precio</p>
+            <input id="inputprecio" value="" type="text" />
+          </div>
+          <div class="Inputlogin">
+            <p>URL de la imagen</p>
+            <input id="inputurlimg" value="" type="text" />
+          </div>
+          <div class="Inputlogin">
+            <p>Categoria</p>
+            <input id="inputcategoria" value="" type="text" disabled />
+          </div>
+          <div class="Inputlogin tareamodal">
+            <p>Description</p>
+            <textarea
+              id="inputdescripcion"
+              oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"'></textarea>
+          </div>
 
-
-        <div class="btnlogin">
-          <button onclick="Login()">Iniciar sesión</button>
-          <button onclick="Credenciales(false)">Cancelar</button>
+          <div class="btnlogin">
+            <button onclick="return tipodemodal()">Aceptar</button>
+            <button onclick="return cerrarmodaladd()">Cancelar</button>
+          </div>
+          <p id="msjuser"></p>
         </div>
-        <p id="msjuser"></p>
       </div>
-    </div>
+    </form>
 
     <script src="scripts.js"></script>
   </body>
