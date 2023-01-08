@@ -10,10 +10,10 @@ let datos;
 let opcmodal;
 let idaux;
 
-const url = "http://localhost:8080/inventario";
+const url = "https://ecommerceback-production-bce9.up.railway.app/inventario";
 const getdatos = async () => {
   try {
-    const response = await fetch("http://localhost:8080/inventario");
+    const response = await fetch("https://ecommerceback-production-bce9.up.railway.app/inventario");
     const data = await response.json();
     // enter you logic when the fetch is successful
     console.log(data);
@@ -269,7 +269,7 @@ const itemeditado = async () => {
   };
 
   try {
-    const response = await fetch("http://localhost:8080/inventario/editar/" + idaux + "/" + token, {
+    const response = await fetch("https://ecommerceback-production-bce9.up.railway.app/editar/" + idaux + "/" + token, {
       method: "PUT",
       headers: { "Content-type": "application/json; charset=UTF-8" },
       body: JSON.stringify(_datos),
@@ -301,7 +301,7 @@ const itemagregado = async () => {
   console.log(_datos);
 
   try {
-    const response = await fetch("http://localhost:8080/inventario/agregar" + "/" + token, {
+    const response = await fetch("https://ecommerceback-production-bce9.up.railway.app/agregar" + "/" + token, {
       method: "POST",
       headers: { "Content-type": "application/json; charset=UTF-8" },
       body: JSON.stringify(_datos),
@@ -334,7 +334,7 @@ function abrirmodaleditar(id) {
 async function borraritem(id) {
   (async () => {
     try {
-    await fetch("http://localhost:8080/inventario/borrar/" + id + "/" + token, { method: "DELETE" });
+    await fetch("https://ecommerceback-production-bce9.up.railway.app/borrar/" + id + "/" + token, { method: "DELETE" });
     getdatos();
     crearGondola(datos);
     }catch(err) {
